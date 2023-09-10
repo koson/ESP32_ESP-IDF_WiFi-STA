@@ -68,6 +68,6 @@ esp_wifi_connect()
 
 ```
 
-
+## [>> เฟสการทำงานของ ESP32 Wi-Fi >>](./Phase-of-WiFi-Connection.md)
 
 
