@@ -166,3 +166,7 @@ void app_main(void)
 #define EXAMPLE_ESP_WIFI_PASS      "___Wifi_password_"
 
 ```
+
+4. แก้ไขที่ผิด (ถ้ามี) และบันทึกผลการทำงานของโปรแกรม
+
+5. pull request โดยการ attach ชื่อ repo ของงานมาในหน้าการทำ PR มาด้วย
