@@ -10,13 +10,13 @@
 
 ขั้นตอนที่จำเป็น
 
-1.  include header file
+### 1.  include header file
 
 ```c
 #include "esp_wifi.h"
 ```
 
-2. การตั้งค่า (Configuration)
+### 2. การตั้งค่า (Configuration)
 
 เราต้องจัดารรพรัพยากรที่จำเป็นให้แก่ Wi-Fi driver โดยการส่งผ่านทาง โครงสร้างข้อมูล wifi_init_config_t โดยฟังก์ชัน
 
@@ -30,7 +30,8 @@ esp_wifi_init(const wifi_init_config_t *config);
 wifi_init_config_t wifi_config = WIFI_INIT_CONFIG_DEFAULT();
 
 ```
-3. กำหนดโหมดการทำงาน
+
+###3. กำหนดโหมดการทำงาน
 
 ESP-IDF Wi-Fi library อนุญาตให้เราใช้งาน Wi-Fi บน ESP32 ได้ในหลายโหมดด้วยกัน
 โดยเราสามารถกำหนดโหมดได้ด้วยฟังก์ชัน `esp_wifi_set_mode()` โดยโครงสร้างข้อมูลสำหรับโหมดเป็น parameterของฟังก์ชัน
@@ -47,7 +48,7 @@ c. WIFI_MODE_APSTA (for station + soft-AP mode)
 esp_wifi_set_mode(wifi_mode_t mode);
 ```
 
-4. เริ่มต้น Wi-Fi
+### 4. เริ่มต้น Wi-Fi
 
 
 การเริ่มต้นการเชื่อมต่อ Wi-Fi ตามที่ตั้ง config และ mode ไว้แล้วนั้น เราสามารถเรียกใช้ตำสั่ง
@@ -57,7 +58,8 @@ esp_wifi_set_mode(wifi_mode_t mode);
 esp_wifi_start(void)
 
 ```
-5. เชื่อมต่อ ESP32 เข้ากับ access point
+
+### 5. เชื่อมต่อ ESP32 เข้ากับ access point
 
 หลังจากที่ Wi-Fi เริ่มทำงานแล้ว เราสามารถที่จะเชื่อมต่อเข้ากับ  access point โดยใช้คำสั่งต่อไปนี้
 
