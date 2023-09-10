@@ -55,4 +55,4 @@ s4.7: เกิด Wi-Fi event  `WIFI_EVENT_STA_CONNECTED`
 
 หลังจาก s4.7 จะสามารถใช้งาน Wi-Fi station ได้
 
-## [>> ใบงานการทดลอง >> ]()
+## [>> ใบงานการทดลอง >> ](./Lab_Sheet_ESP32_ESP-IDF_WiFi-STA.md)
